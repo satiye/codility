@@ -12,17 +12,17 @@ import org.junit.jupiter.params.provider.MethodSource;
 import main.lesson01.BinaryGap;
 
 class BinaryGapTest {
-	private BinaryGap binaryGap;
+	private BinaryGap solution;
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		binaryGap = new BinaryGap();
+		solution = new BinaryGap();
 	}
 
 	 @ParameterizedTest(name = "{index} => N={0}, expectedBinaryGap={1}")
 	 @MethodSource("dataProvider")
 	 void testSolution(int N, int expectedBinaryGap) {
-		 assertEquals(binaryGap.solution(N), expectedBinaryGap);
+		 assertEquals(solution.solution(N), expectedBinaryGap);
 	 }
 
 	 private static Stream<Arguments> dataProvider() {

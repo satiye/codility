@@ -11,6 +11,13 @@ package main.lesson01;
     - If 1 was not seen before, there is no need to do anything.
  */
 
+/*
+ * Verilen bir sayıyı ikili gösterimine dönüştürken 1 ile karşılaşıp karşılaşılmadığını takip ederek boşluklar bulunabilir.
+ * Eğer 1 ile karşılaşılmışsa ve daha önce 1 görülmemişse 1 ile karşılaşıldığı(oneSeen = true) kaydedilir. Daha önce görülmüşse de boşluk tamamlandı anlamına gelir. 
+   Bulunan boşluğun uzunluğu kontrol edilir. Sıfır sayacı tekrar 0 olarak değitirilir.
+ * Eğer 1 ile karşılaşılmamışsa ve daha önce görülen 1 var sıfır sayacı artılır. Aksi durumda birşey yapma ihtiyacı yoktur.
+ */
+
 public class BinaryGap {
 	public int solution(int N) {
         int maxBinaryGapLength = 0;
