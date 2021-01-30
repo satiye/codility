@@ -5,11 +5,7 @@ package main.lesson03;
   The minimum absolute difference between each mutual index element between these two arrays will be the desired difference.
 */
 
-/*
-   Soldan ve sağdan elemanların o elemana kadar olan toplamların olduğu iki farklı dizi tanımlanabilir. 
-   Bu iki dizi arasındaki karşılıklı her index elemanları arasındaki minimum absolute fark istenilen fark olacaktır.
- */
-import java.util.*;
+
 public class TapeEquilibrium {
 	public int solution(int[] A) {
 		int N = A.length;

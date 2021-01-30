@@ -24,7 +24,6 @@ public class OddOccurrencesInArray {
 	public int solution(int[] A) {
 		Set<Integer> mySet = new HashSet<Integer>();
 		
-		int result = 0;
         for(int i=0; i < A.length; i++){
             if(mySet.contains(A[i])){
                 mySet.remove(A[i]);
