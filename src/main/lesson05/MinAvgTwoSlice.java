@@ -1,5 +1,14 @@
 package main.lesson05;
 
+/*
+ * 
+ * The slices are a minimum length of 2. 
+ * The trick to this problem is that the minimum average slice also cannot be longer than 3. 
+ * So we only have to calculate the average of the slices of length 2 and 3.
+ * 
+ * No matter which way we split up this array, 
+ * if the slices aren't exactly the same, then one of them must have a lower average than the full slice.
+ */
 public class MinAvgTwoSlice {
 	 public int solution(int[] A) {
 		 int N = A.length;
