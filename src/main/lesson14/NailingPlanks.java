@@ -1,5 +1,15 @@
 package main.lesson14;
-
+/*
+ *
+ * Binary search on how many nails are needed.(beg:1, end:M)
+ * 
+ * In each search, create prefix_sum[] with used nail size(mid), and then add 1 to prefix_sum[i] if there is any new nail found at the position 'i'
+ * Then compute the total number of nails found so far from start to end of planks
+ * 
+ * Use this prefix_sum to check if all planks can be nailed with this amount of nail.
+ *  - if succeed, set answer and search for smallest number of nail
+ *  - if failed, try with bigger amount of nail
+ */
 public class NailingPlanks {
 	public int solution(int[] A, int[] B, int[] C) {
         int N = A.length;
